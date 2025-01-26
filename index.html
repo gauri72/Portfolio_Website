@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Project</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js"></script>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#about-me" tabindex="0">About Me</a></li>
+                <li><a href="#projects" tabindex="0">Projects</a></li>
+                <li><a href="#contact" tabindex="0">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="about-me" role="region" aria-labelledby="about-me-heading">
+            <h2 id="about-me-heading">About Me</h2>
+            <center>
+                <img id="#myImage" src="myImage.jpeg" alt="A description of the image" width="250px" height="100px">
+            </center>
+            <p>I'm Gauri Nagnath Kolekar, a Computer Science Student based in Aurangabad. With a passion for Software Development, I thrive on turning innovative ideas into reality. Over the past 3 years, I’ve honed my skills in HTML, CSS & JavaScript, contributing to diverse projects that challenge my creativity and technical acumen.
+                I hold a Diploma from Government Polytechnic Aurangabad, where I specialized in Computer Science. My professional journey has led me to work on different projects, allowing me to collaborate with talented teams and grow in my career. These experiences have equipped me with a robust skill set, which I bring to every project.
+                Beyond my professional life, I am passionate about Web Development & App Development. Whether it’s Web Development or App Development, I believe in maintaining a balanced life that fosters both personal and professional growth.
+                In my portfolio, you’ll find a collection of my work that highlights my dedication to Computer Science. Each project reflects my commitment to excellence and my drive to push the boundaries of what’s possible.
+                Thank you for visiting my portfolio. I look forward to connecting and exploring how we can create something amazing together.
+                Best regards, Gauri.</p>
+        </section>
+        <section id="projects" role="region" aria-labelledby="projects-heading">
+            <h2 id="projects-heading">Projects</h2>
+            <ul>
+                <li>Non Profit Website</li>
+                <li>Inventory Management System</li>
+                <li>Library Management System</li>
+                <li>Portfolio Website</li>
+                <li>Git</li>
+            </ul>
+        </section>
+        <section id="skills" role="region" aria-labelledby="skills-heading">
+            <h2 id="skills-heading">Skills</h2>
+            <ul>
+                <li>C#</li>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JavaScript</li>
+                <li>Git</li>
+            </ul>
+        </section>
+        <section id="contact" role="form" aria-labelledby="contact-heading">
+            <h2 id="contact-heading">Contact</h2>
+            <form action="#" method="post">
+                <div>
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required tabindex="0">
+                </div>
+                <div>
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required tabindex="0">
+                </div>
+                <div>
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" rows="4" required tabindex="0"></textarea>
+                </div>
+                <div>
+                    <button type="submit" tabindex="0">Send</button>
+                </div>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2023 Your Name. All rights reserved.</p>
+    </footer>
+</body>
+</html>
