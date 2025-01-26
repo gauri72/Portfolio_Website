@@ -12,6 +12,11 @@
         <nav>
             <ul>
                 <li><a href="#about-me" tabindex="0">About Me</a></li>
+                <li><a href="#achievements" tabindex="0">Achievements</a></li>
+                <li><a href="#education" tabindex="0">Education</a></li>
+                <li><a href="#service" tabindex="0">Service</a></li>
+                <li><a href="#certifications" tabindex="0">Certifications</a></li>
+                <li><a href="#internships" tabindex="0">Internships</a></li>
                 <li><a href="#projects" tabindex="0">Projects</a></li>
                 <li><a href="#contact" tabindex="0">Contact</a></li>
             </ul>
@@ -20,15 +25,40 @@
     <main>
         <section id="about-me" role="region" aria-labelledby="about-me-heading">
             <h2 id="about-me-heading">About Me</h2>
-            <center>
-                <img id="#myImage" src="myImage.jpeg" alt="A description of the image" width="250px" height="100px">
-            </center>
-            <p>I'm Gauri Nagnath Kolekar, a Computer Science Student based in Aurangabad. With a passion for Software Development, I thrive on turning innovative ideas into reality. Over the past 3 years, I’ve honed my skills in HTML, CSS & JavaScript, contributing to diverse projects that challenge my creativity and technical acumen.
-                I hold a Diploma from Government Polytechnic Aurangabad, where I specialized in Computer Science. My professional journey has led me to work on different projects, allowing me to collaborate with talented teams and grow in my career. These experiences have equipped me with a robust skill set, which I bring to every project.
-                Beyond my professional life, I am passionate about Web Development & App Development. Whether it’s Web Development or App Development, I believe in maintaining a balanced life that fosters both personal and professional growth.
-                In my portfolio, you’ll find a collection of my work that highlights my dedication to Computer Science. Each project reflects my commitment to excellence and my drive to push the boundaries of what’s possible.
+                <img id="about-me-heading" src="about-me-img.jpeg" alt="A description of the image" width="250px" height="100px">
+            <p class="highlight">I'm Gauri Nagnath Kolekar, a Computer Science Student based in Chhatrapati Sambhajinagar. With a passion for Programming, I thrive on turning innovative ideas into reality. 
+                I hold a Diploma from Government Polytechnic Aurangabad, where I specialized in Computer Science. 
+                Beyond my professional life, I am passionate about Fitness. Whether it’s Fitness or Web Development, I believe in maintaining a balanced life that fosters both personal and professional growth.
+                In my portfolio, you’ll find a collection of my work that highlights my dedication to Computer Science. 
                 Thank you for visiting my portfolio. I look forward to connecting and exploring how we can create something amazing together.
                 Best regards, Gauri.</p>
+        </section>
+        <section id="achievements" role="region" aria-labelledby="achievement-heading">
+            <h2 id="achievement-heading">Achievements</h2>
+            <div class="slider">
+
+                <div class="slides">
+                    <input type="radio" name="radio-btn" id="radio1">
+                    <input type="radio" name="radio-btn" id="radio2">
+
+                    <div class="slide first">
+                        <img src="image1.jpg" alt="Image 1">
+                    </div>
+                    <div class="slide">
+                        <img src="image2.jpg" alt="Image 2">
+                    </div>
+
+                    <div class="navigation-auto">
+                        <div class="auto-btn1"></div>
+                        <div class="auto-btn2"></div>
+                    </div>
+                </div>
+
+                <div class="navigation-manual">
+                    <label for="radio1" class="manual-btn"></label>
+                    <label for="radio2" class="manual-btn"></label>
+                </div>
+            </div>
         </section>
         <section id="projects" role="region" aria-labelledby="projects-heading">
             <h2 id="projects-heading">Projects</h2>
