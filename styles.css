@@ -73,6 +73,10 @@ main {
     margin: 0 auto;
 }
 
+section {
+    margin-bottom: 2rem;
+}
+
 #about-me {
     text-align: justify;
     font-size: 1.2rem;
@@ -80,7 +84,7 @@ main {
     margin-bottom: 2rem;
 }
 
-h2 {
+#about-me h2 {
     color: #004080; /* Dark blue text */
     text-align: center;
     font-size: 2rem;
@@ -125,148 +129,18 @@ h2 {
     border-radius: 5px;
 }
 
-.slider {
-    position: relative;
-    width: 100%;
-    max-width: 800px;
-    margin: 0 auto;
-    overflow: hidden;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
-}
-
-.slides {
-    display: flex;
-    transition: transform 0.5s ease-in-out;
-}
-
-.slide {
-    min-width: 100%;
-    transition: opacity 0.5s ease-in-out;
-}
-
-.slide img {
-    width: 100%;
-    border-radius: 10px;
-}
-
-.radio-btn {
-    display: none;
-}
-
-.navigation-auto {
-    position: absolute;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    margin-top: -40px;
-}
-
-.auto-btn {
-    border: 2px solid #ffffff;
-    padding: 5px;
-    border-radius: 50%;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-}
-
-.auto-btn:hover {
-    background-color: #ffffff;
-}
-
-.navigation-manual {
-    position: absolute;
-    width: 100%;
-    margin-top: -40px;
-    display: flex;
-    justify-content: center;
-}
-
-.manual-btn {
-    border: 2px solid #ffffff;
-    padding: 5px;
-    border-radius: 50%;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-}
-
-.manual-btn:hover {
-    background-color: #ffffff;
-}
-
-#radio1:checked ~ .first {
-    transform: translateX(0);
-}
-
-#radio2:checked ~ .first {
-    transform: translateX(-100%);
-}
-
-#radio3:checked ~ .first {
-    transform: translateX(-200%);
-}
-
-#radio4:checked ~ .first {
-    transform: translateX(-300%);
-}
-
-section {
-    margin-bottom: 2rem;
-}
-
-footer {
-    background-color: #004080; /* Dark blue background */
-    color: #ffffff; /* White text */
-    text-align: center;
-    padding: 1rem 0;
-    position: fixed;
-    width: 100%;
-    bottom: 0;
-}
-
-form div {
-    margin-bottom: 1rem;
-}
-
-label {
-    display: block;
-    margin-bottom: 0.5rem;
-}
-
-input, textarea {
-    width: 100%;
-    padding: 0.5rem;
-    border: 1px solid #cccccc; /* Light gray border */
-    border-radius: 4px;
-}
-
-button {
-    background-color: #004080; /* Dark blue background */
-    color: #ffffff; /* White text */
-    border: none;
-    padding: 0.5rem 1rem;
-    cursor: pointer;
-    border-radius: 4px;
-}
-
-button:hover {
-    background-color: #003366; /* Darker blue background */
-}
-
-
-
-#projects ul {
+#about-me ul {
     list-style: none;
     padding: 0;
 }
 
-#projects ul li {
+#about-me li {
     position: relative;
     padding-left: 2rem;
     margin-bottom: 1rem;
 }
 
-#projects ul li::before {
+#about-me ul li::before {
     content: '✓'; /* Checkmark icon */
     position: absolute;
     left: 0;
@@ -274,18 +148,19 @@ button:hover {
     font-size: 1.5rem;
     line-height: 1rem;
 }
-#skills ul {
+
+.sections ul {
     list-style: none;
     padding: 0;
 }
 
-#skills ul li {
+.sections ul li {
     position: relative;
     padding-left: 2rem;
     margin-bottom: 1rem;
 }
 
-#skills ul li::before {
+.sections ul li::before {
     content: '✓'; /* Checkmark icon */
     position: absolute;
     left: 0;
@@ -293,6 +168,7 @@ button:hover {
     font-size: 1.5rem;
     line-height: 1rem;
 }
+
 #contact {
     padding: 2rem;
     background-color: #f9f9f9; /* Light gray background */
@@ -319,6 +195,7 @@ button:hover {
 #contact form label {
     font-weight: bold;
     margin-bottom: 0.5rem;
+    display: block;
 }
 
 #contact form input,
@@ -326,6 +203,7 @@ button:hover {
     padding: 0.5rem;
     border: 1px solid #cccccc; /* Light gray border */
     border-radius: 4px;
+    width: 100%;
 }
 
 #contact form button {
@@ -342,6 +220,26 @@ button:hover {
     background-color: #003366; /* Darker blue background */
 }
 /* Media Queries */
+
+footer {
+    background-color: #004080; /* Dark blue background */
+    color: #ffffff; /* White text */
+    text-align: center;
+    padding: 1.5rem 0;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+footer p {
+    margin: 0;
+    font-size: 1rem;
+}
+
+form div {
+    margin-bottom: 1rem;
+}
 
 /* Small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
