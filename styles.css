@@ -21,6 +21,7 @@ header {
 nav {
     background-color: #004080; /* Dark blue background */
     color: black; /* White text */
+    align-items: center;
     padding: 1rem;
 }
 
@@ -48,7 +49,6 @@ nav ul li a:hover {
     text-decoration: underline;
     background-color: #003366; /* Slightly darker blue on hover */
     color: #ffffff; /* White text */
-    border-radius: 5px;
 }
 
 ul {
@@ -60,11 +60,30 @@ ul li {
     background-color: #f4f4f4;
     margin: 0.5rem 0;
     padding: 0.5rem;
-    border-radius: 5px;
 }
 
 ul li:nth-child(odd) {
     background-color: #e4e4e4;
+}
+
+/* Hamburger Menu */
+.hamburger {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.hamburger span {
+    width: 25px;
+    height: 3px;
+    background-color: #ffffff; /* White color */
+    margin: 5px;
+    border-radius: 5px;
+}
+
+img, video {
+    max-width: 100%;
+    height: auto;
 }
 
 main {
@@ -219,7 +238,6 @@ section {
 #contact form button:hover {
     background-color: #003366; /* Darker blue background */
 }
-/* Media Queries */
 
 footer {
     background-color: #004080; /* Dark blue background */
@@ -243,10 +261,31 @@ form div {
 
 /* Small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
+    .hamburger {
+        display: flex;
+    }
+    nav ul {
+        flex-direction: column;
+        display: none;
+        width: 100%;
+        text-align: center;
+    }
+
     nav ul li {
-        display: block;
-        margin-right: 0;
-        margin-bottom: 1rem;
+        margin: 0;
+    }
+
+    nav ul li a {
+        padding: 1rem;
+        border-top: 1px solid #555555;
+    }
+
+    nav ul li a:hover {
+        background-color: #444444;
+    }
+
+    nav ul.show {
+        display: flex;
     }
 
     header, main, footer {
@@ -264,10 +303,32 @@ form div {
 
 /* Medium devices (tablets, 600px to 768px) */
 @media only screen and (min-width: 601px) and (max-width: 768px) {
+    .hamburger {
+        display: flex;
+    }
+
+    nav ul {
+        flex-direction: column;
+        display: none;
+        width: 100%;
+        text-align: center;
+    }
+
     nav ul li {
-        display: block;
-        margin-right: 0;
-        margin-bottom: 1rem;
+        margin: 0;
+    }
+
+    nav ul li a {
+        padding: 1rem;
+        border-top: 1px solid #555555;
+    }
+
+    nav ul li a:hover {
+        background-color: #444444;
+    }
+
+    nav ul.show {
+        display: flex;
     }
 
     header, main, footer {
@@ -285,11 +346,6 @@ form div {
 
 /* Large devices (desktops, 769px and up) */
 @media only screen and (min-width: 769px) {
-    nav ul li {
-        display: inline;
-        margin-right: 1rem;
-    }
-
     header, main, footer {
         padding: 1rem;
     }
@@ -301,21 +357,4 @@ form div {
     button {
         width: auto;
     }
-}
-/* Hamburger Menu */
-.hamburger {
-    display: none;
-    cursor: pointer;
-}
-
-.hamburger div {
-    width: 25px;
-    height: 3px;
-    background-color: #ffffff; /* White color */
-    margin: 5px;
-}
-
-img, video {
-    max-width: 100%;
-    height: auto;
 }

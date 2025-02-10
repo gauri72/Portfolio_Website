@@ -1,9 +1,9 @@
 document.addEventListener('DOMContentLoaded', function() {
     const hamburger = document.querySelector('.hamburger');
-    const navMenu = document.querySelector('.nav-menu');
+    const navMenu = document.querySelector('#nav-menu');
 
     function toggleMenu() {
-        navMenu.classList.toggle('visible');
+        navMenu.classList.toggle('show');
     }
 
     hamburger.addEventListener('click', toggleMenu);

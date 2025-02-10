@@ -10,7 +10,12 @@
 <body>
     <header>
         <nav>
-            <ul>
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <ul id="nav-menu">
                 <li><a href="#about-me" tabindex="0">About Me</a></li>
                 <li><a href="#education" tabindex="0">Education</a></li>
                 <li><a href="#service" tabindex="0">Service</a></li>
@@ -25,19 +30,25 @@
         <section id="about-me" role="region" aria-labelledby="about-me-heading">
             <h2 id="about-me-heading">About Me</h2>
                 <img id="about-me-heading" src="about-me-img.jpeg" alt="A description of the image" width="250px" height="100px">
-            <p class="highlight">I'm Gauri Nagnath Kolekar, a Computer Science Student based in Chhatrapati Sambhajinagar. With a passion for Programming, I thrive on turning innovative ideas into reality. 
-                I hold a Diploma from Government Polytechnic Aurangabad, where I specialized in Computer Science. 
-                Beyond my professional life, I am passionate about Fitness. Whether it’s Fitness or Web Development, I believe in maintaining a balanced life that fosters both personal and professional growth.
-                In my portfolio, you’ll find a collection of my work that highlights my dedication to Computer Science. 
-                Thank you for visiting my portfolio. I look forward to connecting and exploring how we can create something amazing together.
-                Best regards, Gauri.</p>
+            <p class="highlight">
+                Passionate Computer Science & Engineering student and professional Front-End Developer with a strong foundation in web development, UI/UX principles, and modern frameworks. Skilled in creating responsive and user-friendly interfaces, with experience in building interactive applications and optimizing performance for seamless user experiences. Enthusiastic about learning emerging technologies and applying best practices in front-end development.
+            </p>
                 <h2 id="skills-heading">Skills</h2>
             <ul>
-                <li>Front End Development</li>
-                <li>C#</li>
                 <li>HTML</li>
                 <li>CSS</li>
                 <li>JavaScript</li>
+                <li>C</li>
+                <li>C++</li>
+                <li>Java</li>
+                <li>Python</li>
+                <li>SQL</li>
+                <li>C#</li>
+                <li>.Net</li>
+                <li>Bootstrap</li>
+                <li>React</li>
+                <li>Visual Studio Code</li>
+                <li>Artificial Intelligence</li>
             </ul>
         <section id="education" class="sections" role="region" aria-labelledby="education-heading">
             <h2 id="education-heading">Education</h2>
@@ -46,16 +57,17 @@
                 <li>Diploma With 79%</li>
             </ul>
         </section>
-        <section id="service" class="sections" role="region" aria-labelledby="service-heading">
-            <h2 id="service-heading">Service</h2>
-        </section>
         <section id="certifications" class="sections" role="region" aria-labelledby="certiffications-heading">
             <h2 id="projects-heading">Certifications</h2>
             <ul>
-                <li>Foundations of Coding Front End by Microsoft</li>
+                <li>Foundations of Coding Front-End by Microsoft</li>
                 <li>Introduction to C# Programming by Microsoft</li>
                 <li>Introduction to Web Development by Microsoft</li>
+                <li>Blazor for Front-End Development</li>
             </ul>
+        </section>
+        <section id="service" class="sections" role="region" aria-labelledby="service-heading">
+            <h2 id="service-heading">Service</h2>
         </section>
         <section id="internships" class="sections" role="region" aria-labelledby="internships-heading">
             <h2 id="education-heading">Internships</h2>
@@ -63,8 +75,9 @@
         <section id="projects" class="sections" role="region" aria-labelledby="projects-heading">
             <h2 id="projects-heading">Projects</h2>
             <ul>
-                <li>Non Profit Website</li>
                 <li>Portfolio Website</li>
+                <li>E-Commerce Website</li>
+                <li>Non Profit Website</li>
             </ul>
         </section>
         <section id="contact" role="form" aria-labelledby="contact-heading">
